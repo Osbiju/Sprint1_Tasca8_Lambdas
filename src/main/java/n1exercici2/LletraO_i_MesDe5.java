@@ -20,7 +20,7 @@ public class LletraO_i_MesDe5 {
         System.out.println("Les paraules que contenen la o i tenen mes de 5 lletres son:");
 
         paraules.stream()
-                .filter(TeLaO -> TeLaO.contains("o") || TeLaO.contains("O") && TeLaO.length() >= 5)
+                .filter(TeLaO -> (TeLaO.contains("o") || TeLaO.contains("O")) && TeLaO.length() >= 5)
                 .forEach(TeLaO -> System.out.println(TeLaO + "\n"));
 
     }
